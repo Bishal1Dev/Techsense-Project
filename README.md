@@ -875,12 +875,6 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## 13. License
-
-This project is provided for **educational purposes** and is free to use. If you intend to distribute it, consider applying an open-source license such as the **MIT License**. *(Update this section once you decide on a license.)*
-
----
-
 ## 14. Reference / Credits
 
 - **Flask** – The Python web framework used for the backend and API.
