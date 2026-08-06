@@ -886,8 +886,5 @@ This project is provided for **educational purposes** and is free to use. If you
 - **Flask** – The Python web framework used for the backend and API.
 - **Poppins** (Google Fonts) – The typeface used in the interface.
 - **MDN Web Docs** – For the Fetch API and Clipboard API patterns.
-- Author: **#Bishal Lamichhane
-#Arpit Kharel
-#Dipak Yadav
-#Bibek Shahi**
+- Author: **Bishal Lamichhane,Arpit Kharel,Dipak Yadav,Bibek Shahi**
 
