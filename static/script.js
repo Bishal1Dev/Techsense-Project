@@ -1,9 +1,6 @@
 // ======================================
 // Unit Converter
-// Author: #Bishal Lamichhane
-#Arpit Kharel
-#Dipak Yadav
-#Bibek Shahi
+// Author: #Bishal Lamichhane,Arpit Kharel,Dipak Yadav,Bibek Shahi
 // ======================================
 
 const valueInput = document.getElementById("value");

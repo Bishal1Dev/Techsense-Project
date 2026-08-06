@@ -880,5 +880,5 @@ Contributions are welcome! Here's how you can help:
 - **Flask** – The Python web framework used for the backend and API.
 - **Poppins** (Google Fonts) – The typeface used in the interface.
 - **MDN Web Docs** – For the Fetch API and Clipboard API patterns.
-- Author: **Bishal Lamichhane,Arpit Kharel,Dipak Yadav,Bibek Shahi**
+- **Author**: **Bishal Lamichhane,Arpit Kharel,Dipak Yadav,Bibek Shahi**
 
