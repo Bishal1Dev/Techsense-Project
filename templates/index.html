@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unit Converter</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🔄 Unit Converter</h1>
+
+        <p class="subtitle">
+            Fast • Accurate • Simple
+        </p>
+
+        <!-- Category -->
+
+        <div class="group">
+
+            <label>Category</label>
+
+            <select id="category">
+
+                <option>Length</option>
+                <option>Weight</option>
+                <option>Temperature</option>
+                <option>Volume</option>
+                <option>Storage</option>
+                <option>Time</option>
+                <option>Speed</option>
+                <option>Currency</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Value -->
+
+        <div class="group">
+
+            <label>Value</label>
+
+            <input
+                    id="value"
+                    type="number"
+                    placeholder="Enter value">
+
+        </div>
+
+
+        <!-- From -->
+
+        <div class="group">
+
+            <label>From</label>
+
+            <select id="fromUnit">
+
+            </select>
+
+        </div>
+
+
+        <!-- Swap -->
+
+        <div class="swap-area">
+
+            <button id="swapBtn">
+                ⇄ Swap
+            </button>
+
+        </div>
+
+
+        <!-- To -->
+
+        <div class="group">
+
+            <label>To</label>
+
+            <select id="toUnit">
+
+            </select>
+
+        </div>
+
+
+        <!-- Convert -->
+
+        <button id="convertBtn" class="convert">
+
+            Convert
+
+        </button>
+
+
+        <!-- Result -->
+
+        <div class="result" id="result">
+
+            Result will appear here
+
+        </div>
+
+
+        <!-- Copy -->
+
+        <button id="copyBtn">
+
+            Copy Result
+
+        </button>
+
+
+        <!-- History -->
+
+        <div class="history">
+
+            <h2>Recent Conversions</h2>
+
+            <ul id="historyList">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const units = {
+
+Length: [
+"Meter",
+"Kilometer",
+"Centimeter",
+"Millimeter",
+"Foot",
+"Inch",
+"Yard",
+"Mile"
+],
+
+Weight: [
+"Kilogram",
+"Gram",
+"Milligram",
+"Pound",
+"Ounce",
+"Ton"
+],
+
+Temperature: [
+"Celsius",
+"Fahrenheit",
+"Kelvin"
+],
+
+Volume: [
+"Liter",
+"Milliliter",
+"Gallon",
+"Cup"
+],
+
+Storage: [
+"Byte",
+"KB",
+"MB",
+"GB",
+"TB"
+],
+
+Time: [
+"Second",
+"Minute",
+"Hour",
+"Day"
+],
+
+Speed: [
+"m/s",
+"km/h",
+"mph"
+],
+
+Currency: [
+"USD",
+"NPR",
+"EUR",
+"GBP"
+]
+
+};
+
+
+const category=document.getElementById("category");
+const from=document.getElementById("fromUnit");
+const to=document.getElementById("toUnit");
+
+function loadUnits(){
+
+const list=units[category.value];
+
+from.innerHTML="";
+to.innerHTML="";
+
+list.forEach(unit=>{
+
+let o1=document.createElement("option");
+o1.text=unit;
+from.appendChild(o1);
+
+let o2=document.createElement("option");
+o2.text=unit;
+to.appendChild(o2);
+
+});
+
+if(list.length>1)
+to.selectedIndex=1;
+
+}
+
+category.addEventListener("change",loadUnits);
+
+loadUnits();
+
+</script>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
