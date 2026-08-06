@@ -167,7 +167,10 @@ Assume the reader knows nothing. Follow these steps exactly.
 ```bash
 # 1. Clone 
 
-git clone https://github.com/Bishal1Dev/Techsense-Project.git
+git clone https://github.com/#Bishal Lamichhane
+#Arpit Kharel
+#Dipak Yadav
+#Bibek Shahi1Dev/Techsense-Project.git
 
 #navigate into the project folder
 cd Python-Project
@@ -883,5 +886,8 @@ This project is provided for **educational purposes** and is free to use. If you
 - **Flask** – The Python web framework used for the backend and API.
 - **Poppins** (Google Fonts) – The typeface used in the interface.
 - **MDN Web Docs** – For the Fetch API and Clipboard API patterns.
-- Author: **Bishal**
+- Author: **#Bishal Lamichhane
+#Arpit Kharel
+#Dipak Yadav
+#Bibek Shahi**
 
